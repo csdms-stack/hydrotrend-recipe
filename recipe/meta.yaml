@@ -1,5 +1,6 @@
 {% set name = "hydrotrend" %}
 {% set version = "3.0" %}
+{% set build_string = environ.get('GIT_BUILD_STR', '') %}
 
 package:
   name: {{ name }}
@@ -21,4 +22,4 @@ test:
     - hydrotrend -h
 
 build:
-  number: 0
+  string: {{ build_string }}
