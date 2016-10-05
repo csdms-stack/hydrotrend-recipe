@@ -1,7 +1,7 @@
 # Current Build Status
 
 Linux, OSX: [![Build
-Status](https://travis-ci.org/csdms/hydrotrend-recipe.svg?branch=master)](https://travis-ci.org/csdms/hydrotrend-recipe)
+Status](https://travis-ci.org/csdms/hydrotrend-recipe.svg?branch=master)](https://travis-ci.org/csdms-stack/hydrotrend-recipe)
 
 # hydrotrend-recipe
 Conda recipe for hydrotrend
