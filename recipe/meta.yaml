@@ -20,7 +20,9 @@ requirements:
 test:
   commands:
     - hydrotrend -h
-    - hydrotrend --prefix=HYDRO --in-dir=data/input --out-dir=data/output
+    - cp -r $SRC_DIR/data/input ./input
+    - mkdir output
+    - hydrotrend --prefix=HYDRO --in-dir=./input --out-dir=./output
 
 build:
   string: {{ build_string }}
