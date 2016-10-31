@@ -20,6 +20,7 @@ requirements:
 test:
   commands:
     - hydrotrend -h
+    - hydrotrend --prefix=HYDRO --in-dir=data/input --out-dir=data/output
 
 build:
   string: {{ build_string }}
