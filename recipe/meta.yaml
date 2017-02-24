@@ -20,8 +20,9 @@ requirements:
 test:
   commands:
     - hydrotrend -h
-    - cp -r $SRC_DIR/data/input ./input
-    - mkdir output
+    - mkdir input output
+    - curl https://raw.githubusercontent.com/mcflugen/hydrotrend/add-bmi-metadata/data/input/HYDRO.IN > ./input/HYDRO.IN
+    - curl https://raw.githubusercontent.com/mcflugen/hydrotrend/add-bmi-metadata/data/input/HYDRO0.HYPS > ./input/HYDRO0.HYPS
     - hydrotrend --prefix=HYDRO --in-dir=./input --out-dir=./output
 
 build:
