@@ -12,7 +12,8 @@ source:
 requirements:
   build:
     - cmake
-    - gcc # [not win]
+    - clangxx_osx-64 [osx]
+    - gxx_linux-64 [linux]
   run:
     - libgcc
 
@@ -24,7 +25,7 @@ test:
     - hydrotrend --prefix=HYDRO --in-dir=. --out-dir=.
 
 build:
-  number: 3
+  number: 4
 
 about:
   home: http://csdms.colorado.edu/wiki/Model:HydroTrend
